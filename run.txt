@@ -1,0 +1,9 @@
+export LD_LIBRARY_PATH=/home/lims/miniconda3/envs/agently/lib:$LD_LIBRARY_PATH
+
+# 然后运行程序
+python gradio_app.py
+
+
+nohup bash -c 'export LD_LIBRARY_PATH=/home/lims/miniconda3/envs/agently/lib:$LD_LIBRARY_PATH; python gradio_app.py' > output.log 2>&1 &
+
+
